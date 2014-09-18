@@ -24,6 +24,18 @@
     - vars/uib
 
 
+- name: Create STS hazelcast file
+  hosts: Whydah_SecurityTokenService
+  sudo: true
+  roles:
+    - configuration
+  tags:
+    sts
+  vars:
+    username: SecurityTokenService
+    service_config_template: hazelcast.xml
+    service_config: hazelcast.xml
+
 - name: Set up Whydah SecurityTokenService
   hosts: Whydah_SecurityTokenService
   sudo: true
@@ -40,7 +52,7 @@
     applicationid: 11
     applicationsecret: 6r46g3q986Ep6By7B9J46m96D
     version: SNAPSHOT
-    env_vars: -DIAM_MODE=PROD
+    env_vars: -DIAM_MODE=PROD -Dhazelcast.config=hazelcast.xml
     service_config_template: securitytokenservice.properties
     service_config: securitytokenservice.PROD.properties
   vars_files:
@@ -58,7 +70,7 @@
   vars:
     username: SSOLoginWebApp
     group_id: net/whydah/sso
-    app_name: SSOLoginWebApp
+    app_name: SSOLoginWebApplication
     version: SNAPSHOT
     env_vars: -DIAM_MODE=PROD
     service_config_template: ssologinservice.properties

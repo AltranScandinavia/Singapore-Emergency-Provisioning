@@ -1,0 +1,13 @@
+# Whydah TEST all-in-one-server!!!
+
+[Whydah_UserIdentityBackend]
+ec2-54-194-124-213.eu-west-1.compute.amazonaws.com
+
+[Whydah_SecurityTokenService]
+ec2-54-194-124-213.eu-west-1.compute.amazonaws.com
+
+[Whydah_SSOLoginWebApp]
+ec2-54-194-124-213.eu-west-1.compute.amazonaws.com
+
+[Whydah_UserAdminWebapp]
+ec2-54-194-124-213.eu-west-1.compute.amazonaws.com

@@ -1,0 +1,16 @@
+service_port: 9995
+
+ldap_external_url: ldap://{{ldap_server}}:10389/dc=external,dc=WHYDAH,dc=no
+ldap_external_principal: uid=admin,ou=system
+ldap_external_credentials: secret
+
+
+roledb_jdbc_driver: org.hsqldb.jdbc.JDBCDriver
+roledb_jdbc_url: jdbc:hsqldb:file:bootstrapdata/hsqldb/roles
+roledb_jdbc_user: "sa"
+roledb_jdbc_password: ""
+
+adduser_netiq_defaultorganization_name: Whydah
+
+gmail_username: sso.whydah@gmail.com
+gmail_password: Whydah4Ever

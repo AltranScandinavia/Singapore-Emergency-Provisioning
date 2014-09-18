@@ -1,0 +1,29 @@
+maven_snapshot_repository: http://mvnrepo.cantara.no/content/repositories/snapshots
+maven_releases_repository: http://mvnrepo.cantara.no/content/repositories/releases
+
+frontend_server_name: demo.getwhydah.com
+cookiedomain: .getwhydah.com
+logourl: http://demo.getwhydah.com/whydah.png
+
+ldap_server: localhost
+
+Whydah_UserIdentityBackend: ec2-54-194-124-213.eu-west-1.compute.amazonaws.com
+Whydah_UserIdentityBackend_internal: ip-172-31-12-17.eu-west-1.compute.internal
+Whydah_SecurityTokenService: ip-172-31-12-17.eu-west-1.compute.internal
+Whydah_SSOLoginWebApp: ec2-54-194-124-213.eu-west-1.compute.amazonaws.com
+Whydah_UserAdminWebapp: ec2-54-194-124-213.eu-west-1.compute.amazonaws.com
+
+
+uib_uri: http://{{Whydah_UserIdentityBackend_internal}}:9995/uib
+
+sso_uri: http://{{frontend_server_name}}/sso
+
+security_token_service: http://{{Whydah_SecurityTokenService}}:9998/tokenservice
+
+useradmin_uri: http://{{frontend_server_name}}/useradmin/
+
+
+
+
+
+
