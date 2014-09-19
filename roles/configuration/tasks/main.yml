@@ -1,6 +1,10 @@
 - name: Set up user
   user: name={{username}} shell="/bin/bash"
 
+- name: Create directory
+  file: path=/home/{{username}}/{{ catalogue|default('')}} state=directory owner={{username}}
+
+
 - name: Set up app config file
-  template: src={{service_config_template}} dest=/home/{{username}}/{{service_config}}
+  template: src={{service_config_template}} dest=/home/{{username}}/{{ catalogue|default('')}}{{service_config}}
   sudo_user: "{{username}}"

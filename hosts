@@ -1,13 +1,16 @@
-# Whydah TEST all-in-one-server!!!
+# Whydah DEMO all-in-one-server!!!
 
 [Whydah_UserIdentityBackend]
-ec2-54-194-124-213.eu-west-1.compute.amazonaws.com
+ec2-54-164-1-21.compute-1.amazonaws.com #Main
 
 [Whydah_SecurityTokenService]
-ec2-54-194-124-213.eu-west-1.compute.amazonaws.com
+ec2-54-164-1-21.compute-1.amazonaws.com #Main
+ec2-54-85-214-10.compute-1.amazonaws.com #Extra Without UIB
 
 [Whydah_SSOLoginWebApp]
-ec2-54-194-124-213.eu-west-1.compute.amazonaws.com
+ec2-54-164-1-21.compute-1.amazonaws.com #Main
+ec2-54-85-214-10.compute-1.amazonaws.com #Extra Without UIB
 
-[Whydah_UserAdminWebapp]
-ec2-54-194-124-213.eu-west-1.compute.amazonaws.com
+[Whydah_UserAdminWebApp]
+ec2-54-164-1-21.compute-1.amazonaws.com #Main
+ec2-54-85-214-10.compute-1.amazonaws.com #Extra Without UIB

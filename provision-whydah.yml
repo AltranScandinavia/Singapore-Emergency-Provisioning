@@ -1,6 +1,19 @@
 ---
 # This playbook deploys Whydah to AWS AMI's
 
+- name: Create UIB users file
+  hosts: Whydah_UserIdentityBackend
+  sudo: true
+  roles:
+    - configuration
+  tags:
+    uib
+  vars:
+    username: UserIdentityBackend
+    service_config_template: whydah-users.csv
+    catalogue: "testdata/"
+    service_config: users.csv
+
 - name: Set up Whydah UserIdentityBackend
   hosts: Whydah_UserIdentityBackend
   sudo: true
