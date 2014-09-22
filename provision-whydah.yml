@@ -92,8 +92,8 @@
   vars_files:
     - vars/ssoLogin
 
-- name: Set up Whydah UserAdminWebapp
-  hosts: Whydah_UserAdminWebapp
+- name: Set up Whydah UserAdminWebApp
+  hosts: Whydah_UserAdminWebApp
   sudo: true
   roles:
     - standard
@@ -102,16 +102,36 @@
   tags:
     admin
   vars:
-    username: UserAdminWebapp
+    username: UserAdminWebApp
     group_id: net/whydah/identity
-    app_name: UserAdminWebapp
+    app_name: UserAdminWebApp
     version: SNAPSHOT
     env_vars: -DIAM_MODE=PROD
-    service_config_template: useradministration.properties
-    service_config: useradministration.PROD.properties
+    service_config_template: useradminwebapp.properties
+    service_config: useradminwebapp.PROD.properties
     verify_service_url: http://localhost:9996/useradmin
   vars_files:
     - vars/userAdministration
+
+- name: Set up Whydah TestWebApp
+  hosts: Whydah_TestWebApp
+  sudo: true
+  roles:
+    - standard
+    - configuration
+    - app
+  tags:
+    testapp
+  vars:
+    username: TestWebApp
+    group_id: net/whydah/sso/web
+    app_name: TestWebApp
+    version: SNAPSHOT
+    env_vars: -DIAM_MODE=TEST
+    service_port: 9990
+    service_config_template: testwebapp.properties
+    service_config: testwebapp.TEST.properties
+    verify_service_url: http://localhost:9990/test/hello
 
 - name: Set up Apache config
   hosts: Whydah_SSOLoginWebApp

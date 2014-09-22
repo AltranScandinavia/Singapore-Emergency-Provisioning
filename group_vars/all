@@ -1,9 +1,9 @@
 maven_snapshot_repository: http://mvnrepo.cantara.no/content/repositories/snapshots
 maven_releases_repository: http://mvnrepo.cantara.no/content/repositories/releases
 
-frontend_server_name: demo.getwhydah.com
+frontend_server_name: hademo.getwhydah.com
 cookiedomain: .getwhydah.com
-logourl: http://demo.getwhydah.com/whydah.png
+logourl: http://{{frontend_server_name}}/whydah.png
 
 ldap_server: localhost
 
@@ -21,6 +21,8 @@ sso_uri: http://{{frontend_server_name}}/sso
 security_token_service: http://{{Whydah_SecurityTokenService}}:9998/tokenservice
 
 useradmin_uri: http://{{frontend_server_name}}/useradmin/
+
+testwebapp_uri: http://{{frontend_server_name}}/test
 
 
 
