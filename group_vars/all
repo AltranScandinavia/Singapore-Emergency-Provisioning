@@ -9,20 +9,21 @@ ldap_server: localhost
 
 Whydah_UserIdentityBackend: ec2-54-164-1-21.compute-1.amazonaws.com
 Whydah_UserIdentityBackend_internal: ip-172-31-30-240.ec2.internal
-Whydah_SecurityTokenService: ip-172-31-30-240.ec2.internal
-Whydah_SSOLoginWebApp: ec2-54-164-1-21.compute-1.amazonaws.com
+Whydah_SecurityTokenService: localhost
+Whydah_SSOLoginWebApp: localhost
 Whydah_UserAdminWebapp: ec2-54-164-1-21.compute-1.amazonaws.com
+Whydah_TestWebapp: localhost
 
 
-uib_uri: http://{{Whydah_UserIdentityBackend_internal}}:9995/uib
+uib_uri: http://{{Whydah_UserIdentityBackend_internal}}:9995/uib/
 
-sso_uri: http://{{frontend_server_name}}/sso
+sso_uri: http://{{frontend_server_name}}/sso/
 
-security_token_service: http://{{Whydah_SecurityTokenService}}:9998/tokenservice
+security_token_service: http://{{frontend_server_name}}/tokenservice/
 
 useradmin_uri: http://{{frontend_server_name}}/useradmin/
 
-testwebapp_uri: http://{{frontend_server_name}}/test
+testwebapp_uri: http://{{frontend_server_name}}/test/
 
 
 

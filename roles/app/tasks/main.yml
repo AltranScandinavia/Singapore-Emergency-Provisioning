@@ -28,7 +28,7 @@
 - name: App upstart conf
   template: src=service-upstart.conf.jinja dest=/etc/init/{{app_name}}.conf owner=root mode=644
 
-- name: Start App service
+- name: ReStart App service
   service: name="{{app_name}}" state=restarted
 
 

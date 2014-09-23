@@ -5,16 +5,45 @@ ec2-54-164-1-21.compute-1.amazonaws.com #Main
 
 [Whydah_SecurityTokenService]
 ec2-54-164-1-21.compute-1.amazonaws.com #Main
-ec2-54-85-214-10.compute-1.amazonaws.com #Extra Without UIB
+#Extra Without UIB
+ec2-54-164-161-36.compute-1.amazonaws.com
+ec2-54-165-193-24.compute-1.amazonaws.com
+ec2-54-165-211-150.compute-1.amazonaws.com
+ec2-54-165-235-26.compute-1.amazonaws.com
+ec2-54-165-27-26.compute-1.amazonaws.com
+ec2-54-165-83-50.compute-1.amazonaws.com
+ec2-54-165-225-84.compute-1.amazonaws.com
+ec2-54-165-199-35.compute-1.amazonaws.com
+ec2-54-84-237-236.compute-1.amazonaws.com
+ec2-54-165-216-54.compute-1.amazonaws.com
 
 [Whydah_SSOLoginWebApp]
 ec2-54-164-1-21.compute-1.amazonaws.com #Main
-ec2-54-85-214-10.compute-1.amazonaws.com #Extra Without UIB
+#Extra Without UIB
+ec2-54-164-161-36.compute-1.amazonaws.com
+ec2-54-165-193-24.compute-1.amazonaws.com
+ec2-54-165-211-150.compute-1.amazonaws.com
+ec2-54-165-235-26.compute-1.amazonaws.com
+ec2-54-165-27-26.compute-1.amazonaws.com
+ec2-54-165-83-50.compute-1.amazonaws.com
+ec2-54-165-225-84.compute-1.amazonaws.com
+ec2-54-165-199-35.compute-1.amazonaws.com
+ec2-54-84-237-236.compute-1.amazonaws.com
+ec2-54-165-216-54.compute-1.amazonaws.com
 
 [Whydah_UserAdminWebApp]
 ec2-54-164-1-21.compute-1.amazonaws.com #Main
-ec2-54-85-214-10.compute-1.amazonaws.com #Extra Without UIB
 
 [Whydah_TestWebApp]
 ec2-54-164-1-21.compute-1.amazonaws.com #Main
-ec2-54-85-214-10.compute-1.amazonaws.com #Extra Without UIB
+#Extra Without UIB
+ec2-54-164-161-36.compute-1.amazonaws.com
+ec2-54-165-193-24.compute-1.amazonaws.com
+ec2-54-165-211-150.compute-1.amazonaws.com
+ec2-54-165-235-26.compute-1.amazonaws.com
+ec2-54-165-27-26.compute-1.amazonaws.com
+ec2-54-165-83-50.compute-1.amazonaws.com
+ec2-54-165-225-84.compute-1.amazonaws.com
+ec2-54-165-199-35.compute-1.amazonaws.com
+ec2-54-84-237-236.compute-1.amazonaws.com
+ec2-54-165-216-54.compute-1.amazonaws.com
