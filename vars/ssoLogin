@@ -3,7 +3,7 @@ service_port: 9997
 signupEnabled: "true"
 testpage: "true"
 
-logintype_facebook: disabled
+logintype_facebook: true
 logintype_openid: disabled
 logintype_omni: disabled
 logintype_userpassword: enabled
@@ -12,5 +12,5 @@ logintype_netiq_text: NetIQ Login
 
 netIQauthURL: https://netiq.novell.com/sso/netiqauth/
 
-FACEBOOK_APP_SECRET: b33ffbbe32d16a69535d703507872805
-FACEBOOK_APP_ID: 1401823033368162
+FACEBOOK_APP_ID: 1473768109540372
+FACEBOOK_APP_SECRET: 3b01b99be17ccff03853f177d7b22fcc
