@@ -6,7 +6,7 @@ cookiedomain: .altrancloud.com
 
 Emergency_app: ec2-54-164-1-21.compute-1.amazonaws.com
 
-emergency_uri: http://{{Emergency_app}}:9090/emergency/
+emergency_uri: http://{{Emergency_app}}:8080/
 
 
 

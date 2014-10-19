@@ -15,10 +15,10 @@
     username: EmergencyApp
     group_id: com/altran/demo
     app_name: EmergencyApp
-    service_port: 9090
+    service_port: 8080
     version: SNAPSHOT
     env_mode: PROD
     env_vars: -DIAM_MODE=PROD
     service_config_template: emergencyapp.properties
     service_config: emergencyapp.PROD.properties
-    verify_service_url: http://localhost:9090/emergency/
+    verify_service_url: http://localhost:8080/emergency/
