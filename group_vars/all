@@ -1,30 +1,12 @@
 maven_snapshot_repository: http://mvnrepo.cantara.no/content/repositories/snapshots
 maven_releases_repository: http://mvnrepo.cantara.no/content/repositories/releases
 
-frontend_server_name: hademo.getwhydah.com
-cookiedomain: .getwhydah.com
-logourl: http://{{frontend_server_name}}/whydah.png
+frontend_server_name: iot.altrancloud.com
+cookiedomain: .altrancloud.com
 
-ldap_server: localhost
+Emergency_app: ec2-54-164-1-21.compute-1.amazonaws.com
 
-Whydah_UserIdentityBackend: ec2-54-164-1-21.compute-1.amazonaws.com
-Whydah_UserIdentityBackend_internal: ip-172-31-30-240.ec2.internal
-Whydah_SecurityTokenService: localhost
-Whydah_SSOLoginWebApp: localhost
-Whydah_UserAdminWebapp: ec2-54-164-1-21.compute-1.amazonaws.com
-Whydah_TestWebapp: localhost
-
-
-uib_uri: http://{{Whydah_UserIdentityBackend_internal}}:9995/uib/
-
-sso_uri: http://{{frontend_server_name}}/sso/
-
-security_token_service: http://{{frontend_server_name}}/tokenservice/
-
-useradmin_uri: http://{{frontend_server_name}}/useradmin/
-
-testwebapp_uri: http://{{frontend_server_name}}/test/
-
+emergency_uri: http://{{Emergency_app}}:9090/emergency/
 
 
 

@@ -1,7 +1,5 @@
-Whydah-Provisioning
+Singapore Emergency Provisioning
 ===================
-
-Whydah Provisioning Example
 
 Prerequisites
 -------------
@@ -18,7 +16,7 @@ Given a project "My-Whydah-Config" located in the
 
 Provisioning
 ------------
-ansible-playbook provision-whydah.yml
+time ansible-playbook -i hosts provision-app.yml --private-key=~/.ssh/...
 
 Alternatives:
 

@@ -5,7 +5,7 @@
 - name: Install Java dependencies
   yum: name={{ item }} state=present
   with_items:
-    - java-1.7.0-openjdk
+    - java-1.8.0-openjdk
 
 #Async operation
 #- name: yum update
@@ -33,11 +33,11 @@
 
 
 #### Test that service works:
-- wait_for: port={{service_port}} delay=5 timeout=30
+#- wait_for: port={{service_port}} delay=5 timeout=30
 
-- name: Test that service responds
-  get_url: url={{verify_service_url}} dest=/tmp/test_{{app_name}} force=true
-  when: verify_service_url is defined
-  register: result
+#- name: Test that service responds
+#  get_url: url={{verify_service_url}} dest=/tmp/test_{{app_name}} force=true
+#  when: verify_service_url is defined
+#  register: result
 
 - debug: msg="{{result}}"

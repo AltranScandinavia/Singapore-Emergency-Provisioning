@@ -1,0 +1,24 @@
+---
+# This playbook deploys Whydah to AWS AMI's
+
+- name: Set up Whydah UserIdentityBackend
+  hosts: Emergency_app
+  sudo: true
+  roles:
+    - standard
+    - configuration
+    - app
+    - apache
+  tags:
+    emergency
+  vars:
+    username: EmergencyApp
+    group_id: com/altran/demo
+    app_name: EmergencyApp
+    service_port: 9090
+    version: SNAPSHOT
+    env_mode: PROD
+    env_vars: -DIAM_MODE=PROD
+    service_config_template: emergencyapp.properties
+    service_config: emergencyapp.PROD.properties
+    verify_service_url: http://localhost:9090/emergency/
