@@ -16,11 +16,11 @@ Given a project "My-Whydah-Config" located in the
 
 Provisioning
 ------------
-time ansible-playbook -i hosts provision-app.yml --private-key=~/.ssh/...
+time ansible-playbook -i hosts provision-app.yml --private-timestamp=~/.ssh/...
 
 Alternatives:
 
-* --private-key=~/mykeyfile.pem
+* --private-timestamp=~/mykeyfile.pem
 * -vvvv <- For debugging
 * --help
 * --tags uib | sts | sso | adminapp <- To run one of the setups
