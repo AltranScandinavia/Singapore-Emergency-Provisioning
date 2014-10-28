@@ -1,7 +1,7 @@
 ---
-# This playbook deploys Whydah to AWS AMI's
+# This playbook deploys RTW Apps to AWS AMI's
 
-- name: Set up Whydah UserIdentityBackend
+- name: Set up Emergency App
   hosts: Emergency_app
   sudo: true
   roles:
@@ -22,3 +22,23 @@
     service_config_template: emergencyapp.properties
     service_config: emergencyapp.PROD.properties
     verify_service_url: http://localhost:8080/emergency/
+
+- name: Set up LeadsGeneratorDemo App
+  hosts: Emergency_app
+  sudo: true
+  roles:
+    - standard
+    - app
+    - apache
+  tags:
+    leads
+  vars:
+    username: leadsdemo
+    group_id: com/altran/demo
+    app_name: LeadsGeneratorDemo
+    service_port: 8081
+    service_config: ""
+    version: SNAPSHOT
+    env_mode: PROD
+    env_vars: -DIAM_MODE=PROD
+    verify_service_url: http://localhost:8081/bootdemo/
